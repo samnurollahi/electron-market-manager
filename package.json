@@ -1,0 +1,21 @@
+{
+  "name": "market-manager",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "sam",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --watch . --exec electron .",
+    "tailwind:setup": "npx @tailwindcss/cli -i ./views/style/input.css -o ./views/style/output.css --watch"
+  },
+  "dependencies": {
+    "@sequelize/sqlite3": "^7.0.0-alpha.47",
+    "@tailwindcss/cli": "^4.1.15",
+    "electron": "^38.3.0",
+    "sequelize": "^6.37.7",
+    "tailwindcss": "^4.1.15"
+  }
+}

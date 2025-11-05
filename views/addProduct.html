@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="./style/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/anim.css" />
+    <link rel="stylesheet" href="./style/jalali.css" />
+  </head>
+  <body class="animate__animated animate__fadeIn animate__faster">
+    <div class="w-[90%] m-auto">
+      <h1 class="text-center mb-8 text-[40px] text-gray-700">add product</h1>
+      <div>
+        <div>
+          <label
+            id="labelPhoto"
+            class="rounded-sm py-2 border border-dashed cursor-pointer block text-center"
+            >عکس</label
+          >
+          <img src="" alt="" id="photo" class="hidden size-36 m-auto" />
+        </div>
+        <br />
+
+        <div class="m-4">
+          <label for="name">اسم محصول</label>
+          <br />
+          <input
+            type="text"
+            class="transition rounded-sm outline-0 border border-gray-300 bg-gray-400 focus:bg-gray-200 p-1 w-full"
+            id="nameProduct"
+            placeholder="مثلا کیک"
+          />
+        </div>
+        <div class="m-4">
+          <label for="price">قیمت</label>
+          <br />
+          <input
+            type="text"
+            class="transition rounded-sm outline-0 border border-gray-300 bg-gray-400 focus:bg-gray-200 p-1 w-full"
+            id="price"
+            placeholder="مثلا 100,000"
+          />
+        </div>
+        <div class="m-4">
+          <label for="count">تعداد</label>
+          <br />
+          <input
+            type="text"
+            class="transition rounded-sm outline-0 border border-gray-300 bg-gray-400 focus:bg-gray-200 p-1 w-full"
+            id="count"
+            placeholder="مثلا 10"
+          />
+        </div>
+        <div class="m-4">
+          <label for="exp">انتضا</label>
+          <br />
+          <input
+            type="text"
+            class="transition rounded-sm outline-0 border border-gray-300 bg-gray-400 focus:bg-gray-200 p-1 w-full"
+            id="exp"
+            placeholder="مثلا 1404/8/5"
+            data-jdp
+          />
+        </div>
+      </div>
+
+      <button
+        class="transition px-16 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-md text-white mt-5 block m-auto cursor-pointer"
+        id="btnAddProduct"
+      >
+        افزودن
+      </button>
+    </div>
+
+    <script src="./script/jalali.js"></script>
+    <script src="script/addProduct.js"></script>
+    <script>
+      jalaliDatepicker.startWatch();
+    </script>
+  </body>
+</html>

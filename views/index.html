@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my view</title>
+
+    <link href="./style/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/anim.css" />
+  </head>
+  <body class="animate__animated animate__fadeIn animate__faster">
+    <div class="w-[90%] m-auto">
+      <h1 class="text-center mb-8 text-[40px] text-gray-700">market manager</h1>
+
+      <div class="p-3 border border-dotted flex justify-center items-center">
+        <button
+          class="cursor-pointer text-2xl transition hover:text-amber-700"
+          id="addProduct"
+        >
+          +
+        </button>
+      </div>
+
+      <!-- products -->
+      <div class="mt-[30px]" dir="ltr">
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+          <table
+            class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+          >
+            <thead
+              class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+            >
+              <tr>
+                <th scope="col" class="px-6 py-3">عکس</th>
+                <th scope="col" class="px-6 py-3">نام محصول</th>
+                <th scope="col" class="px-6 py-3">قیمت</th>
+                <th scope="col" class="px-6 py-3">تعداد</th>
+                <th scope="col" class="px-6 py-3">
+                  <span class="sr-only">Edit</span>
+                  <span class="sr-only">-</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
