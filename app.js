@@ -264,6 +264,17 @@ electron.app.setUserTasks([
   },
 ]);
 
+// shell
+// electron.shell.beep();
+// electron.shell.openExternal("http://google.com");
+// electron.shell.openPath(
+//   path.join(electron.app.getPath("desktop"), "trash.txt")
+// ); // trash.txt
+// electron.shell.showItemInFolder(electron.app.getAppPath());
+// electron.shell.trashItem(
+//   path.join(electron.app.getPath("desktop"), "trash.txt")
+// );
+
 db.sync()
   .then(() => {
     console.log("db connected");
