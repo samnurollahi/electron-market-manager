@@ -1,5 +1,6 @@
 const addProduct = document.getElementById("addProduct"),
-  tbody = document.getElementById("tbody");
+  tbody = document.getElementById("tbody"),
+  getTheme = document.getElementById("getTheme");
 
 addProduct.addEventListener("click", (e) => {
   document.body.classList.remove("animate__fadeIn");
@@ -12,6 +13,14 @@ addProduct.addEventListener("click", (e) => {
 
 window.addEventListener("DOMContentLoaded", async () => {
   await getProducts();
+});
+
+getTheme.addEventListener("click", async () => {
+  try {
+    console.log(await window.myApi.getTheme());
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 async function deleteProduct(id) {
@@ -65,3 +74,15 @@ async function getProducts() {
     `;
   });
 }
+
+async function setusername(username = "sam") {
+  // const name = await localStorage.getItem("username");
+  // if (!name) {
+  //   await localStorage.setItem("username", username);
+  // } else {
+  //   console.log(name);
+  // }
+  // await localStorage.clear();
+}
+
+setusername();

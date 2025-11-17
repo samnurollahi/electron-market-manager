@@ -18,4 +18,7 @@ contextBridge.exposeInMainWorld("myApi", {
   dec: async (id) => {
     return await ipcRenderer.invoke("dec", id);
   },
+  getTheme: async () => {
+    return await ipcRenderer.invoke("getTheme");
+  },
 });

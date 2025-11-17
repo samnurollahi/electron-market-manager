@@ -14,6 +14,7 @@
   "dependencies": {
     "@sequelize/sqlite3": "^7.0.0-alpha.47",
     "@tailwindcss/cli": "^4.1.15",
+    "auto-launch": "^5.0.6",
     "electron": "^38.3.0",
     "sequelize": "^6.37.7",
     "tailwindcss": "^4.1.15"

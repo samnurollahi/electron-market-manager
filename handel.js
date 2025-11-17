@@ -63,3 +63,7 @@ electron.ipcMain.handle("dec", async (event, id) => {
     return { msg: "no", err };
   }
 });
+
+electron.ipcMain.handle("getTheme", () => {
+  return electron.nativeTheme.shouldUseDarkColors ? "dark" : "ligth";
+});
