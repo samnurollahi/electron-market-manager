@@ -200,6 +200,66 @@ electron.app.on("ready", async () => {
   // });
   // autoRun.enable();
   //autoRun.disable();
+
+  // control + q
+
+  // electron.globalShortcut.register("CommandOrControl+Q", () => {
+  //   electron.app.quit();
+  // });
+
+  // if (electron.globalShortcut.isRegistered("CommandOrControl+Q")) {
+  //   electron.globalShortcut.unregister("CommandOrControl+Q");
+  // }
+
+  // electron.globalShortcut.unregisterAll();
+
+  // electron.globalShortcut.register("CommandOrControl+X", () => {
+  //   new electron.Notification({
+  //     title: "CommandOrControl+X",
+  //     silent: true,
+  //   }).show();
+  // });
+
+  // electron.globalShortcut.registerAll(["X", "C", "Z", "Q"], () => {
+  //   electron.app.quit();
+  // });
+
+  // console.log("status", electron.net.online);
+  // console.log("status", electron.net.isOnline());
+  // electron.net
+  //   .fetch("https://google.com")
+  //   .then((data) => {
+  //     // console.log(data.status);
+  //     // console.log(data.body);
+  //     // console.log(data.type);
+  //     console.log(data.redirected);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   });
+  // const request = electron.net.request("http://google.com");
+  // request.on("response", (response) => {
+  //   response.on("data", (data) => {
+  //     // console.log(response.headers);
+  //     // console.log(response.httpVersion);
+  //     // console.log(response.statusCode);
+  //     // console.log(response.statusMessage);
+  //     // console.log(data.toString());
+  //     console.log("data");
+  //   });
+  //   response.on("error", () => {
+  //     console.log("err");
+  //   });
+  // });
+
+  // request.setHeader("content-type", "json")
+  // request.on("finish", () => {
+  //   console.log("finish");
+  // });
+  // request.on("error", () => {
+  //   console.log("err");
+  // });
+  // request.end();
 });
 
 // handel
@@ -274,6 +334,38 @@ electron.app.setUserTasks([
 // electron.shell.trashItem(
 //   path.join(electron.app.getPath("desktop"), "trash.txt")
 // );
+
+// electron.powerMonitor.on("suspend", () => {
+//   console.log("suspend");
+// });
+// electron.powerMonitor.on("resume", () => {
+//   console.log("resume");
+// });
+// electron.powerMonitor.on("lock-screen", () => {
+//   console.log("lock");
+// });
+// electron.powerMonitor.on("unlock-screen", () => {
+//   console.log("unlock");
+// });
+// electron.powerMonitor.on("on-ac", () => {
+//   console.log("on-ac");
+// });
+// electron.powerMonitor.on("on-battery", () => {
+//   console.log("on-battery");
+// });
+// electron.powerMonitor.on("shutdown", () => {
+//   console.log("shutdown");
+// });
+// electron.powerMonitor.on("speed-limit-change", (d) => {
+//   console.log(d);
+// });
+
+// setInterval(() => {
+//   console.log(electron.powerMonitor.getSystemIdleTime()); // s
+// }, 5_000);
+// console.log(electron.powerMonitor.getSystemIdleState(10)); // s
+// console.log(electron.powerMonitor.isOnBatteryPower());
+// console.log(electron.powerMonitor.onBatteryPower);
 
 db.sync()
   .then(() => {
