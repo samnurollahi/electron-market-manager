@@ -367,6 +367,11 @@ electron.app.setUserTasks([
 // console.log(electron.powerMonitor.isOnBatteryPower());
 // console.log(electron.powerMonitor.onBatteryPower);
 
+// powerSaveBlocker
+// const id = electron.powerSaveBlocker.start("prevent-display-sleep");
+// electron.powerSaveBlocker.stop(id);
+// console.log(electron.powerSaveBlocker.isStarted(id));
+
 db.sync()
   .then(() => {
     console.log("db connected");
